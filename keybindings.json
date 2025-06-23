@@ -1,20 +1,131 @@
 [
+    // ===== НАВИГАЦИЯ ПО КОДУ =====
     {
-        "key": "cmd+i",
-        "command": "composerMode.agent"
-    },
-    {
-        "key": "shift shift",
-        "command": "workbench.action.findInFiles"
-    },
-    {
-        "key": "cmd+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-    },
-    {
-        "key": "cmd+d",
-        "command": "editor.action.copyLinesDownAction",
+        "key": "cmd+click",                         // Mac: переход к объявлению по клику
+        "command": "editor.action.goToDeclaration",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+click",                        // Windows: переход к объявлению по клику
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+b",                             // Mac: переход к объявлению
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "ctrl+b",                            // Windows: переход к объявлению
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "cmd+alt+b",                         // Mac: переход к реализации
+        "command": "editor.action.goToImplementation"
+    },
+    {
+        "key": "ctrl+alt+b",                        // Windows: переход к реализации
+        "command": "editor.action.goToImplementation"
+    },
+    {
+        "key": "cmd+shift+b",                       // Mac: переход к определению типа
+        "command": "editor.action.goToTypeDefinition"
+    },
+    {
+        "key": "ctrl+shift+b",                      // Windows: переход к определению типа
+        "command": "editor.action.goToTypeDefinition"
+    },
+    
+    // ===== РЕФАКТОРИНГ =====
+    {
+        "key": "cmd+alt+m",                         // Mac: извлечь метод
+        "command": "editor.action.extractMethod"
+    },
+    {
+        "key": "ctrl+alt+m",                        // Windows: извлечь метод
+        "command": "editor.action.extractMethod"
+    },
+    {
+        "key": "cmd+alt+v",                         // Mac: извлечь переменную
+        "command": "editor.action.extractVariable"
+    },
+    {
+        "key": "ctrl+alt+v",                        // Windows: извлечь переменную
+        "command": "editor.action.extractVariable"
+    },
+    {
+        "key": "cmd+alt+c",                         // Mac: извлечь константу
+        "command": "editor.action.extractConstant"
+    },
+    {
+        "key": "ctrl+alt+c",                        // Windows: извлечь константу
+        "command": "editor.action.extractConstant"
+    },
+    
+    // ===== РАБОТА СО СТРОКАМИ =====
+    {
+        "key": "cmd+d",                             // Mac: дублировать строку
+        "command": "editor.action.copyLinesDownAction"
+    },
+    {
+        "key": "ctrl+d",                            // Windows: дублировать строку
+        "command": "editor.action.copyLinesDownAction"
+    },
+    {
+        "key": "cmd+backspace",                     // Mac: удалить строку
+        "command": "editor.action.deleteLines"
+    },
+    {
+        "key": "ctrl+backspace",                    // Windows: удалить строку
+        "command": "editor.action.deleteLines"
+    },
+    {
+        "key": "cmd+shift+up",                      // Mac: переместить строку вверх
+        "command": "editor.action.moveLinesUpAction"
+    },
+    {
+        "key": "ctrl+shift+up",                     // Windows: переместить строку вверх
+        "command": "editor.action.moveLinesUpAction"
+    },
+    {
+        "key": "cmd+shift+down",                    // Mac: переместить строку вниз
+        "command": "editor.action.moveLinesDownAction"
+    },
+    {
+        "key": "ctrl+shift+down",                   // Windows: переместить строку вниз
+        "command": "editor.action.moveLinesDownAction"
+    },
+    
+    // ===== ДОПОЛНИТЕЛЬНЫЕ КОМАНДЫ =====
+    {
+        "key": "cmd+alt+l",                         // Mac: форматировать код
+        "command": "editor.action.formatDocument"
+    },
+    {
+        "key": "ctrl+alt+l",                        // Windows: форматировать код
+        "command": "editor.action.formatDocument"
+    },
+    {
+        "key": "cmd+alt+o",                         // Mac: оптимизировать импорты
+        "command": "editor.action.organizeImports"
+    },
+    {
+        "key": "ctrl+alt+o",                        // Windows: оптимизировать импорты
+        "command": "editor.action.organizeImports"
+    },
+    {
+        "key": "cmd+shift+enter",                   // Mac: новая строка выше
+        "command": "editor.action.insertCursorAbove"
+    },
+    {
+        "key": "ctrl+shift+enter",                  // Windows: новая строка выше
+        "command": "editor.action.insertCursorAbove"
+    },
+    {
+        "key": "cmd+enter",                         // Mac: новая строка ниже
+        "command": "editor.action.insertCursorBelow"
+    },
+    {
+        "key": "ctrl+enter",                        // Windows: новая строка ниже
+        "command": "editor.action.insertCursorBelow"
     }
 ]
